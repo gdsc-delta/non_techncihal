@@ -1,5 +1,4 @@
 
-
 ```markdown
 # Interactive Department Circles
 
