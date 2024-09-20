@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non_Technichal Department Circles</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .white-rectangle {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+        }
+        .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .circle:hover {
+            transform: scale(1.1);
+        }
+        .circle-content {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+        .info {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 200px;
+            display: none;
+            z-index: 1;
+        }
+        .circle:hover .info {
+            display: block;
+        }
+        #hr { background-color: #ff6b6b; }
+        #pr { background-color: #4ecdc4; }
+        #social { background-color: #45b7d1; }
+        #graphic { background-color: #f7b731; }
+        #content { background-color: #5d62d4; }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="white-rectangle">
+            <div class="logo-container">
+                <img src="background.png" alt="Team Logo" class="logo">
+            </div>
+            <div class="container">
+                <div class="circle" id="hr">
+                    <div class="circle-content">HR</div>
+                    <div class="info">
+                        <h3>Human Resources</h3>
+                        <p>Manages employee relations, recruitment, and workplace policies.</p>
+                        <p>Join us to develop HR strategies and support organizational growth.</p>
+                    </div>
+                </div>
+                <div class="circle" id="pr">
+                    <div class="circle-content">PR</div>
+                    <div class="info">
+                        <h3>Public Relations</h3>
+                        <p>Handles company image, media relations, and public communication.</p>
+                        <p>Join us to shape brand perception and manage crisis communications.</p>
+                    </div>
+                </div>
+                <div class="circle" id="social">
+                    <div class="circle-content">Social Media</div>
+                    <div class="info">
+                        <h3>Social Media</h3>
+                        <p>Manages company's presence across various social platforms.</p>
+                        <p>Join us to create engaging content and grow our online community.</p>
+                    </div>
+                </div>
+                <div class="circle" id="graphic">
+                    <div class="circle-content">Graphic Design</div>
+                    <div class="info">
+                        <h3>Graphic Design</h3>
+                        <p>Creates visual content for marketing materials and branding.</p>
+                        <p>Join us to bring creative ideas to life and enhance visual communication.</p>
+                    </div>
+                </div>
+                <div class="circle" id="content">
+                    <div class="circle-content">Content Writing</div>
+                    <div class="info">
+                        <h3>Content Writing</h3>
+                        <p>Produces written content for various platforms and purposes.</p>
+                        <p>Join us to craft compelling narratives and informative pieces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
